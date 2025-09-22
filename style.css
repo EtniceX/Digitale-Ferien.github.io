@@ -12,7 +12,8 @@
 html, body {
     min-width: 100vw;
     min-height: 100vh;
-    margin: 0px;    
+    margin: 0px;  
+    padding: 0px;	
     font-size: var(--text-font-size);
     color: var(--text-color);
     background-color: #721813;
@@ -52,7 +53,7 @@ html, body {
 
 #command-name-title {
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: min(1vw, 1vh);
     font-size: 2.2rem;
 }
 
@@ -66,15 +67,15 @@ html, body {
 
 #command-avatar {
     aspect-ratio: 1 / 1;
-	width: 35%;
-    border: 4px solid var(--primary-color);
+	width: 40%;
+    border: min(1vh, 1vw) solid var(--primary-color);
     box-shadow: 0 4px 10px var(--shadow-color);
     border-radius: 50%;
     object-fit: contain;
 }
 
 #command-description {
-    margin: 20px auto;
+    margin: min(2vh, 2vw) auto;
     max-width: 80%;
     line-height: 1.5;
     color: #555;
@@ -96,7 +97,7 @@ html, body {
     align-items: center;
     justify-content: center;
     gap: min(5vh, 5vw);
-    padding: min(1vh, 1vw);
+	margin: min(2vh, 2vw) 0px;
     border-radius: min(1.5vw, 1.5vw);
     background-color: var(--secondary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -114,6 +115,7 @@ html, body {
 .member-avatar {
     aspect-ratio: 1 / 1;
 	width: 40%;
+	margin: min(2vh, 2vw);
     border: min(1vh, 1vw) solid var(--primary-color);
     border-radius: 50%;
     object-fit: cover;
