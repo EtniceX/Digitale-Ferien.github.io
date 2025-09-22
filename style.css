@@ -30,7 +30,7 @@ html, body {
     text-align: center;
     border-radius: min(2vh, 2vw);
     overflow: hidden;
-    padding: min(2vh, 2vw);
+    padding: min(4vh, 4vw);
 }
 
 @media(orientation: landscape) {
@@ -89,7 +89,6 @@ html, body {
 .members-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .member-div {
@@ -98,7 +97,7 @@ html, body {
     justify-content: center;
     gap: min(5vh, 5vw);
     padding: min(1vh, 1vw);
-    border-radius: 12px;
+    border-radius: min(1.5vw, 1.5vw);
     background-color: var(--secondary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
