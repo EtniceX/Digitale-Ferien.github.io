@@ -3,7 +3,7 @@
 :root {
     --border-color: #583735;
     --text-font-size: x-large;
-    --primary-color: #583735    ;
+    --primary-color: #583735;
     --secondary-color: #f8f8f8;
     --text-color: #333;
     --shadow-color: rgb(183, 105, 105);
@@ -61,7 +61,7 @@ html, body {
     color: #666;
     font-size: 1.5rem;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: min(2.5vh, 2.5vw);
     font-weight: normal;
 }
 
@@ -75,7 +75,7 @@ html, body {
 }
 
 #command-description {
-    margin: min(2vh, 2vw) auto;
+    margin: min(3vh, 3vw) auto;
     max-width: 80%;
     line-height: 1.5;
     color: #555;
@@ -83,7 +83,7 @@ html, body {
 
 #members-title {
     color: var(--primary-color);
-    margin: 30px 0;
+    margin: min(3vh, 3vw);
     font-size: 1.8rem;
 }
 
