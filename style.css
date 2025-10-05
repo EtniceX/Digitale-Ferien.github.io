@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*-----------------------------General styles-----------------------------*/
 :root {
     --border-color: #583735;
     --text-font-size: x-large;
@@ -31,7 +32,9 @@ html, body {
     text-align: center;
     border-radius: min(2vh, 2vw);
     overflow: hidden;
-    padding: min(4vh, 4vw);
+    padding-bottom: min(4vh, 4vw);
+	padding-left: min(4vh, 4vw);
+	padding-right: min(4vh, 4vw);
 }
 
 @media(orientation: landscape) {
@@ -46,6 +49,22 @@ html, body {
     }
 }
 
+#switch-panel {
+	width: 100%;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+.switch-button {
+	height: min(10vh, 10vw);
+	font-size: min(5vh, 4vw);
+	background: var(--border-color);
+	border-radius: 1.5%;
+	color: white;
+}
+
+/*-----------------------------First tab styles-----------------------------*/
 .header-section {
     border-bottom: 1px solid #eee;
     margin-bottom: min(3vh, 3vw);
@@ -131,4 +150,9 @@ html, body {
 .member-audio {
     width: 100%;
     margin-top: min(1.5vh, 1.5vw);
+}
+
+/*-----------------------------Second tab styles-----------------------------*/
+#task2-video {
+	margin-top: min(4vh, 4vw);
 }
