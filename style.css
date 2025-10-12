@@ -54,6 +54,8 @@ html, body {
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: min(2vw, 2vh);
+	border-bottom: 1px solid #eee;
+	padding-bottom: min(2vw, 2vh);
 }
 
 .switch-button {
@@ -82,7 +84,7 @@ html, body {
     margin-bottom: min(3vh, 3vw);
 }
 
-#command-name-title {
+h1 {
     color: var(--primary-color);
     margin-bottom: min(1vw, 1vh);
     font-size: 2.2rem;
@@ -167,4 +169,41 @@ html, body {
 /*-----------------------------Second tab styles-----------------------------*/
 #task2-video {
 	margin-top: min(4vh, 4vw);
+}
+
+/*-----------------------------Third tab styles-----------------------------*/
+
+.word {
+	white-space: normal;
+    overflow-wrap: normal;
+    hyphens: auto;
+	overflow: hidden;
+}
+
+ul {
+    padding-left: min(4vh, 4vw);	
+}
+
+.illustration {
+	aspect-ratio: 1 / 1;
+	float: left;
+	padding-right: min(7vh, 7vw);
+	padding-bottom: min(4vh, 4vw);
+}
+
+.word-info {
+	text-align: left;
+	font-size: min(4vh, 4vw);
+}
+
+@media(orientation: landscape) {
+	.illustration {
+		width: 30%;
+	}
+}
+
+@media(orientation: portrait) {
+	.illustration {
+		width: 45%;
+	}
 }
