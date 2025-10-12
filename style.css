@@ -21,7 +21,6 @@ html, body {
 }
 
 * {
-    box-sizing: border-box;
     font-family: arial, sans-serif;
 }
 
@@ -49,19 +48,31 @@ html, body {
     }
 }
 
+/*-----------------------------Tab panel styles-----------------------------*/
 #switch-panel {
 	width: 100%;
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: min(2vw, 2vh);
 }
 
 .switch-button {
 	height: min(10vh, 10vw);
-	font-size: min(5vh, 4vw);
-	background: var(--border-color);
-	border-radius: 1.5%;
-	color: white;
+	font-size: min(4.5vh, 3.5vw);
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: min(4vh, 4vw);
+	white-space: nowrap;
+	background: none;
+	color: var(--border-color);
+	border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.switch-button:hover {
+    color: #a35951;
 }
 
 /*-----------------------------First tab styles-----------------------------*/
