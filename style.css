@@ -166,11 +166,14 @@ h1 {
     margin-top: min(1.5vh, 1.5vw);
 }
 
-/*-----------------------------Second tab styles-----------------------------*/
+/*-----------------------------Second and fourth tabs styles-----------------------------*/
 #task2-video {
 	margin-top: min(4vh, 4vw);
 }
 
+#task4-video {
+	margin-top: min(4vh, 4vw);
+}
 /*-----------------------------Third tab styles-----------------------------*/
 
 .word {
