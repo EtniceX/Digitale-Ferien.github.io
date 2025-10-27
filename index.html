@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AVASA — Digitale Ferien 25</title>
         <link rel="stylesheet" href="./style.css">
+		
+		<script>
+		    for (let current of document.getElementsByTagName("img")) {
+			    current.loading = "lazy";
+			}
+		</script>
     </head>
 
     <body>
         <div id="page-content">
 		    <script>
-			    for (let current of document.getElementsByTagName("img")) {
-				    current.loading = "lazy";
-				}
-			
 			    function switchToTab(tabId) {
 				    const tabs = document.getElementsByClassName("tab");
 					for(let current of tabs) {
