@@ -10,7 +10,9 @@
     <body>
         <div id="page-content">
 		    <script>
-			    document.getElementsByClassName("img").loading = "lazy";
+			    for (let current of document.getElementsByClassName("img")) {
+				    current.loading = "lazy";
+				}
 			
 			    function switchToTab(tabId) {
 				    const tabs = document.getElementsByClassName("tab");
