@@ -21,7 +21,12 @@ html, body {
 }
 
 * {
-    font-family: arial, sans-serif;
+    font-family: arial;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.4em;
 }
 
 #page-content {
@@ -51,25 +56,24 @@ html, body {
 /*-----------------------------Tab panel styles-----------------------------*/
 #switch-panel {
 	width: 100%;
-	display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: min(2vw, 2vh);
 	border-bottom: 1px solid #eee;
 	padding-bottom: min(2vw, 2vh);
 }
 
 .switch-button {
-	height: min(10vh, 10vw);
-	font-size: min(4.5vh, 3.5vw);
+	height: fit-content;
+	font-size: 1.1em;
 	padding-right: 0px;
 	padding-left: 0px;
 	padding-top: min(4vh, 4vw);
+	margin-left: min(2vw, 2vh);
+	margin-right: min(2vw, 2vh);
 	white-space: nowrap;
 	background: none;
 	color: var(--border-color);
 	border: none;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
     transition: color 0.3s ease;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -84,15 +88,8 @@ html, body {
     margin-bottom: min(3vh, 3vw);
 }
 
-h1 {
-    color: var(--primary-color);
-    margin-bottom: min(1vw, 1vh);
-    font-size: 2.2rem;
-}
-
 .subtitle {
     color: #666;
-    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: min(2.5vh, 2.5vw);
     font-weight: normal;
@@ -100,7 +97,7 @@ h1 {
 
 #command-avatar {
     aspect-ratio: 1 / 1;
-	width: 40%;
+	width: 35%;
     border: min(1vh, 1vw) solid var(--primary-color);
     box-shadow: 0 4px 10px var(--shadow-color);
     border-radius: 50%;
@@ -112,12 +109,6 @@ h1 {
     max-width: 80%;
     line-height: 1.5;
     color: #555;
-}
-
-#members-title {
-    color: var(--primary-color);
-    margin: min(3vh, 3vw);
-    font-size: 1.8rem;
 }
 
 .members-container {
@@ -147,7 +138,7 @@ h1 {
 
 .member-avatar {
     aspect-ratio: 1 / 1;
-	width: 40%;
+	width: 35%;
 	margin: min(2vh, 2vw);
     border: min(1vh, 1vw) solid var(--primary-color);
     border-radius: 50%;
@@ -158,7 +149,7 @@ h1 {
 .member-info {
     flex: 1;
     max-width: 60%;
-	font-size: min(5vw, 5vh);
+	font-size: 1.1em;
 }
 
 .member-audio {
@@ -167,13 +158,11 @@ h1 {
 }
 
 /*-----------------------------Second and fourth tabs styles-----------------------------*/
-#task2-video {
+.video-iframe {
 	margin-top: min(4vh, 4vw);
+	max-width: 90%;
 }
 
-#task4-video {
-	margin-top: min(4vh, 4vw);
-}
 /*-----------------------------Third tab styles-----------------------------*/
 
 .word {
@@ -183,30 +172,26 @@ h1 {
 	overflow: hidden;
 }
 
-ul {
-    padding-left: min(4vh, 4vw);	
-}
-
 .illustration {
 	aspect-ratio: 1 / 1;
 	float: left;
-	padding-right: min(7vh, 7vw);
-	padding-bottom: min(4vh, 4vw);
+	margin-right: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 .word-info {
 	text-align: left;
-	font-size: min(4vh, 4vw);
+	font-size: 0.85em;
 }
 
 @media(orientation: landscape) {
 	.illustration {
-		width: 30%;
+		width: 25%;
 	}
 }
 
 @media(orientation: portrait) {
 	.illustration {
-		width: 45%;
+		width: 40%;
 	}
 }
